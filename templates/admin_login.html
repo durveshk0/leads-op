@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Login - GSBG</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 h-screen flex items-center justify-center">
+    <div class="bg-white p-8 rounded shadow-md w-full max-w-md">
+        <h2 class="text-2xl font-bold mb-4 text-center">Admin Login</h2>
+        <form method="post" action="/admin-login" class="space-y-4">
+            <div>
+                <label class="block text-sm font-medium">Email:</label>
+                <input type="email" name="email" required class="w-full border border-gray-300 rounded px-3 py-2">
+            </div>
+            <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">Login</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+Jinja2
+APScheduler
+sentence-transformers
+scikit-learn
+pandas
+numpy
+apscheduler
+python-multipart

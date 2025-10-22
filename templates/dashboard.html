@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GSBG Leads Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <div class="container mx-auto py-8">
+        <h2 class="text-3xl font-bold mb-6 text-center">📊 GSBG Lead Intelligence Dashboard</h2>
+        <div class="overflow-x-auto">
+            <table class="table-auto w-full border-collapse border border-gray-300">
+                <thead>
+                    <tr class="bg-gray-200">
+                        <th class="border border-gray-300 px-4 py-2">Name</th>
+                        <th class="border border-gray-300 px-4 py-2">Email</th>
+                        <th class="border border-gray-300 px-4 py-2">Score</th>
+                        <th class="border border-gray-300 px-4 py-2">Classification</th>
+                        <th class="border border-gray-300 px-4 py-2">Created</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for l in leads %}
+                    <tr class="hover:bg-gray-100">
+                        <td class="border border-gray-300 px-4 py-2">{{l[1]}}</td>
+                        <td class="border border-gray-300 px-4 py-2">{{l[2]}}</td>
+                        <td class="border border-gray-300 px-4 py-2">{{l[4]}}</td>
+                        <td class="border border-gray-300 px-4 py-2">{{l[5]}}</td>
+                        <td class="border border-gray-300 px-4 py-2">{{l[7]}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
