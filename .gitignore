@@ -1,0 +1,24 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+env/
+
+# Model files
+models/*.pkl
+*.npy
+*.json
+
+# Database
+database/*.db
+
+# Environment files
+*.env
+
+# Node/Frontend builds (if any)
+.next/
+node_modules/
+dist/
